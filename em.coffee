@@ -1,3 +1,4 @@
+# based on stock keymap/emacs.js
 do ->
   Pos = CodeMirror.Pos
 
