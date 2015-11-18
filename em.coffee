@@ -451,7 +451,8 @@ do ->
     'Shift-Alt-5': 'replace'
     'Alt-/': 'autocomplete'
     'Ctrl-J': 'newlineAndIndent'
-    'Enter': false
+    'Enter': 'newlineAndIndent'
+    'Shift-tab': 'indentLess'
     'Tab': (cm) ->
       if cm.somethingSelected()
         cm.indentSelection 'add'
