@@ -340,6 +340,9 @@
     'Ctrl-W': function(cm) {
       kill(cm, cm.getCursor('start'), cm.getCursor('end'));
     },
+    'Ctrl-P': function(cm) {
+      kill(cm, cm.getCursor('start'), cm.getCursor('end'));
+    },
     'Ctrl-K': repeated(function(cm) {
       var end, start, text;
       start = cm.getCursor();

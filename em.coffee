@@ -314,6 +314,11 @@ do ->
     'Ctrl-W': (cm) ->
       kill cm, cm.getCursor('start'), cm.getCursor('end')
       return
+    # until can come up with a better key...  
+    'Ctrl-P': (cm) ->
+      kill cm, cm.getCursor('start'), cm.getCursor('end')
+      return
+      
     'Ctrl-K': repeated((cm) ->
       start = cm.getCursor()
       end = cm.clipPos(Pos(start.line))
